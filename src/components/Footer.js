@@ -8,7 +8,7 @@ function Footer() {
       <div class=" w-full min-h-fit  flex flex-col sm:flex-row  justify-between items-center ">
 
         <div class="flex items-center gap-3">
-          <img src="/Footer/logo.png" alt="" class="h-[49px]" />
+          {/* <img src="/Footer/logo.png" alt="" class="h-[49px]" /> */}
           <h2 class="text-white font-semibold text-2xl">CodeSpot</h2>
         </div>
         <div class="flex flex-col sm:flex-row  h-full gap-3 text-[#D0D5DD]  items-center">

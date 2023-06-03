@@ -3,12 +3,16 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const navlinks = [
     {
-        title: "Documnets",
-        link: "/Documents",
+        title: "Home",
+        link: "/",
+    },
+    {
+        title: "Courses",
+        link: "#Courses",
     },
     {
         title: "About Us",
-        link: "/About Us",
+        link: "/AboutUs",
     },
     {
         title:"Mentor",
@@ -28,7 +32,7 @@ const Navbar = () => {
             <div className="mx-auto  px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
-                    <div className="flex items-center">
+                    <div className="flex items-center text-xl">
                         <a href='/' className='text-white'>
                             {/* <img src="" alt="CodeSpot" srcSet="" /> */}
                             CodeSpot    
@@ -36,7 +40,7 @@ const Navbar = () => {
                     </div>
                     {/* Navlinks */}
                     <div className="hidden md:flex">
-                        <div className="text-base 2xl:text-lg ml-10 flex items-baseline space-x-2">
+                        <div className="text-lg 2xl:text-xl ml-10 flex items-baseline space-x-2">
                             {navlinks.map((link, index) => (
                                 <a
                                     key={index}
@@ -48,7 +52,7 @@ const Navbar = () => {
                             ))}
 
                             <div className="!ml-8 border-2 border-[#475467] rounded-lg">
-                                <button className="inline-flex items-center text-[#E0EAFF] border-1 border-white py-1 px-2 focus:outline-none rounded md:mt-0 hover:bg-[#475467] hover:text-[#E0EAFF] text-base 2xl:text-lg"><a href='/signup'>Get Started</a>
+                                <button className="inline-flex items-center text-[#E0EAFF] border-1 border-white py-1 px-2 focus:outline-none rounded md:mt-0 hover:bg-[#475467] hover:text-[#E0EAFF] text-lg 2xl:text-xl"><a href='/signup'>Get Started</a>
                                </button>
                             </div>
                         </div>
@@ -79,7 +83,7 @@ const Navbar = () => {
                                 {link.title}
                             </a>
                         ))}
-                        <a href='/Get Started' className="text-center cursor-pointer text-[#E0EAFF] hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Get Started
+                        <a href='/signup' className="text-center cursor-pointer text-[#E0EAFF] hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Get Started
                         </a>
                     </div>
                 </div>
