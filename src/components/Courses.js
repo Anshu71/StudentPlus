@@ -1,93 +1,95 @@
 import React, { useState } from "react";
 import WebDevelopment from "../assets/WebDevelopment.jpg";
 import  MachineLearning from "../assets/MachineLearning.jpg";
-import Artificial from "../assets/Artificial.jpg";
+import Artificial from "../assets/Artificial.webp";
 import DeepLearning from "../assets/DeepLearning.jpg";
-import DataScience from "../assets/DataScience.jpg";
+import DataScience from "../assets/DataScience.webp";
 import AndroidDevelopment from "../assets/AndroidDevelopment.jpg";
-import Devops from "../assets/Devops.png";
-import CyberSecurity from "../assets/CyberSecurity.jpg";
+import Devops from "../assets/Devops.jpg";
+import CyberSecurity from "../assets/CyberSecurity.cms";
 
 function Courses() {
   const [imageFirst, setImageFirst] = useState(WebDevelopment);
   const [imageSecond, setImageSecond] = useState(DataScience);
-  const installationStepsFirstSet = [
+  const coursesFirstSet = [
     {
       id: 1,
       header: "Web Development",
       description:
-        "Risus ornare fermentum egestas convallis quis. Donec ut pharetra placerat suspendisse.",
+        "Unlock the World of Web Development: Build, Create, Innovate",
       image: WebDevelopment,
+      link: "/webdev",
     },
     {
       id: 2,
       header: "Machine Learning",
       description:
-        "Porttitor penatibus velit risus fermentum facilisis. Sit at phasellus dictumst ut in.",
+        "Harness the power of Machine Learning to uncover patterns, make predictions, and unlock the hidden potential of data.",
       image: MachineLearning,
     },
     {
       id: 3,
       header: "Artificial Intelligence",
       description:
-        "Tincidunt lobortis non quis egestas pulvinar maecenas. Molestie nulla vestibulum sodales facilisis vitae lacus aliquet.",
+        "Embrace the future with Artificial Intelligence, where intelligent machines revolutionize the way we live, work, and interact.",
       image: Artificial,
     },
     {
       id: 4,
       header: "Deep Learning",
       description:
-        "Elit dolor amet quam et. Egestas risus libero diam lorem commodo.",
+        "Dive into the depths of Deep Learning, where neural networks learn, adapt, and uncover complex patterns to fuel groundbreaking advancements.",
       image: DeepLearning,
     },
   ];
-  const installationStepsSecondSet = [
+  const coursesSecoundSet = [
     {
       id: 5,
       header: "Data Science",
       description:
-        "Risus ornare fermentum egestas convallis quis. Donec ut pharetra placerat suspendisse.",
+        "Embark on a data-driven journey, unraveling insights and driving innovation through the dynamic field of Data Science.",
       image: DataScience,
     },
     {
       id: 6,
       header: "Android Development",
       description:
-        "Porttitor penatibus velit risus fermentum facilisis. Sit at phasellus dictumst ut in.",
+        "Enter the world of Android Development and bring your app ideas to life, shaping the digital experiences of millions.",
       image: AndroidDevelopment,
     },
     {
       id: 7,
       header: "Dev Ops",
       description:
-        "Tincidunt lobortis non quis egestas pulvinar maecenas. Molestie nulla vestibulum sodales facilisis vitae lacus aliquet.",
+        "Experience the synergy of development and operations with DevOps, streamlining processes and accelerating software delivery for enhanced efficiency and collaboration.",
       image: Devops,
     },
     {
       id: 8,
       header: "Cyber Security",
       description:
-        "Elit dolor amet quam et. Egestas risus libero diam lorem commodo.",
+        "Explore the realm of Cybersecurity and safeguard digital landscapes against threats, ensuring confidentiality, integrity, and availability in an interconnected world.",
       image: CyberSecurity,
     },
   ];
   return (
-    <div className="overflow-hidden bg-[#101828]">
+    <div className="overflow-hidden bg-[#101828]" id="Courses">
       <div className="">
         <div className="p-12 w-full h-full flex flex-col-reverse xl:flex-row md:flex-row">
           <div className="w-full xl:w-1/2 relative">
-            <p className="text-[#6172F3] font-bold">INSTALLATION GUIDE</p>
+            <p className="text-[#6172F3] font-bold">COURSES LIST</p>
             <p className="font-title text-[#FCFCFD] text-2xl md:text-4xl pt-2 pb-2">
-              TCET Linux Installation Steps
+            TechXpertise: Explore Cutting-Edge Courses 1.
             </p>
             <div className="absolute z-30 top-14 left-0 w-48 h-80  bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-100 opacity-30 blur-2xl flex-none order-4 rounded-xl transform -rotate-45"></div>
-            <div onMouseLeave={() => setImageFirst(WebDevelopment)}>
-              {installationStepsFirstSet.map((step) => (
+            <div className="" onMouseLeave={() => setImageFirst(WebDevelopment)}>
+              {coursesFirstSet.map((step) => (
                 <div
                   className="pt-6 cursor-pointer text-sm sm:text-base"
                   onMouseEnter={() => setImageFirst(step.image)}
                   key={step.id}
                 >
+                  
                   <p className="text-[#98A2B3] font-semibold">
                     {step.id}. {step.header}
                   </p>
@@ -95,12 +97,12 @@ function Courses() {
                 </div>
               ))}
             </div>
-            <div className="mt-8 hidden xl:block md:block">
+            {/* <div className="mt-8 hidden xl:block md:block">
               <button className="text-[#F9FAFB] border border-[#667085] rounded-lg p-3">
                 {" "}
                 Download
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="relative w-full flex justify-center align-middle xl:w-1/2">
             <div className="absolute z-30 top-5 w-48 h-52 xl:w-[600px] xl:h-[450px] bg-[#98A2B3] opacity-30 blur-2xl flex-none order-4 rounded-full"></div>
@@ -119,13 +121,13 @@ function Courses() {
             </div>
           </div>
           <div className="relative w-full xl:w-1/2 sm:pl-0 md:pl-6 xl:pl-6">
-            <p className="text-[#6172F3] font-bold hidden xl:block md:block">INSTALLATION GUIDE</p>
+            <p className="text-[#6172F3] font-bold hidden xl:block md:block">COURSES LIST</p>
             <p className="font-title text-[#FCFCFD] text-4xl pt-2 pb-2 hidden xl:block md:block">
-              TCET Linux Installation Steps
+            TechXpertise: Explore Cutting-Edge Courses.
             </p>
             <div className="absolute z-30 top-20 right-0 w-48 h-52 bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-100 opacity-30 blur-2xl flex-none order-4 rounded-full transform rotate-45"></div>
             <div onMouseLeave={() => setImageSecond(DataScience)}>
-              {installationStepsSecondSet.map((step) => (
+              {coursesSecoundSet.map((step) => (
                 <div
                   className="pt-6 cursor-pointer"
                   onMouseEnter={() => setImageSecond(step.image)}
@@ -138,12 +140,12 @@ function Courses() {
                 </div>
               ))}
             </div>
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <button className="text-[#F9FAFB] border border-[#667085] rounded-lg p-3">
                 {" "}
                 Download
               </button>
-            </div>
+            </div> */}
           </div>
           
         </div>
