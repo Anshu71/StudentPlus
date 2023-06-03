@@ -10,6 +10,10 @@ const navlinks = [
         title: "About Us",
         link: "/About Us",
     },
+    {
+        title:"Mentor",
+        link: "/Join"
+    }
 ];
 
 const Navbar = () => {

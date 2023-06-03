@@ -1,31 +1,26 @@
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Signup from "./components/Signup";
 import Landing from "./pages/landing";
-import {
-    createBrowserRouter,
-    RouterProvider,
-  } from "react-router-dom";
-
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Landing />,
-    },
-    {
-        path: "/signup",
-        element: <Signup />,
-    },
-  ]);
+import Join from "./pages/join";
+import RoomPage from "./pages/room";
 
 function App() {
   return (
-    <div className="font-sans">
+    <Router>
+      <div className="font-sans">
         <Navbar />
-      <RouterProvider router={router} />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/join" element={<Join />} />
+          <Route path="/room/:roomId" element={<RoomPage />} />
+        </Routes>
         <Footer />
-    </div>
+      </div>
+    </Router>
   );
 }
 
