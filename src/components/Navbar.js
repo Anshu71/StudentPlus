@@ -17,6 +17,10 @@ const navlinks = [
     {
         title:"Mentor",
         link: "/Join"
+    },
+    {
+        title:"Landing",
+        link:"/Landing"
     }
 ];
 
