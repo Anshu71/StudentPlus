@@ -20,7 +20,7 @@ const navlinks = [
     // },
     {
         title: "Contact Us",
-        link: "maile:anshupandey133@gmail.com",
+        link: "mailto:anshupandey133@gmail.com",
     },
     {
         title:"Mentor",

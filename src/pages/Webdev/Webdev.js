@@ -35,7 +35,7 @@ function Webdev() {
                     <h1
                         class="lg:w-3/5 lg:text-4xl md:w-2/3 sm:w-full sm:text-3xl w-full text-2xl leading-8 mb-8 text-white font-title "
                     >
-                        Matching Industry Standards with High Grade Student Trainings
+                        Web Development Courses & Roadmap
                     </h1>
                     <div
                         class="grid lg:grid-rows-2 lg:grid-cols-3 sm:grid-rows-3 sm:grid-cols-2 grid-cols-1 grid-rows-6 gap-4"

@@ -5,23 +5,23 @@ import "swiper/css";
 
 const data = [
   {
-    caption: "Massa elementum mi sed magnis",
+    caption: "HTML",
     imgLink: "html.jpg",
   },
   {
-    caption: "Massa elementum mi sed magnis",
+    caption: "CSS",
     imgLink: "css.png",
   },
   {
-    caption: "Massa elementum mi sed magnis",
+    caption: "Java Script",
     imgLink: "js.webp",
   },
   {
-    caption: "Massa elementum mi sed magnis",
+    caption: "MERN Stack",
     imgLink: "mern.png",
   },
   {
-    caption: "Massa elementum mi sed magnis",
+    caption: "MEAN Stack",
     imgLink: "mean.jpg",
   },
 ];

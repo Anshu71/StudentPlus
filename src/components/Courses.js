@@ -11,6 +11,7 @@ import CyberSecurity from "../assets/CyberSecurity.cms";
 function Courses() {
   const [imageFirst, setImageFirst] = useState(WebDevelopment);
   const [imageSecond, setImageSecond] = useState(DataScience);
+
   const coursesFirstSet = [
     {
       id: 1,
@@ -18,7 +19,7 @@ function Courses() {
       description:
         "Unlock the World of Web Development: Build, Create, Innovate",
       image: WebDevelopment,
-      link: "/webdev",
+      link: "/Webdev",
     },
     {
       id: 2,
@@ -26,6 +27,7 @@ function Courses() {
       description:
         "Harness the power of Machine Learning to uncover patterns, make predictions, and unlock the hidden potential of data.",
       image: MachineLearning,
+      link: "/Machine.js",
     },
     {
       id: 3,
@@ -33,6 +35,7 @@ function Courses() {
       description:
         "Embrace the future with Artificial Intelligence, where intelligent machines revolutionize the way we live, work, and interact.",
       image: Artificial,
+      link: "/Artificial.js",
     },
     {
       id: 4,
@@ -40,6 +43,7 @@ function Courses() {
       description:
         "Dive into the depths of Deep Learning, where neural networks learn, adapt, and uncover complex patterns to fuel groundbreaking advancements.",
       image: DeepLearning,
+      link: "/DeepLearning.js",
     },
   ];
   const coursesSecoundSet = [
@@ -49,6 +53,7 @@ function Courses() {
       description:
         "Embark on a data-driven journey, unraveling insights and driving innovation through the dynamic field of Data Science.",
       image: DataScience,
+      link: "/DataScience.js",
     },
     {
       id: 6,
@@ -56,6 +61,7 @@ function Courses() {
       description:
         "Enter the world of Android Development and bring your app ideas to life, shaping the digital experiences of millions.",
       image: AndroidDevelopment,
+      link: "/AndroidDev.js",
     },
     {
       id: 7,
@@ -63,6 +69,7 @@ function Courses() {
       description:
         "Experience the synergy of development and operations with DevOps, streamlining processes and accelerating software delivery for enhanced efficiency and collaboration.",
       image: Devops,
+      link: "/Devops.js",
     },
     {
       id: 8,
@@ -70,6 +77,7 @@ function Courses() {
       description:
         "Explore the realm of Cybersecurity and safeguard digital landscapes against threats, ensuring confidentiality, integrity, and availability in an interconnected world.",
       image: CyberSecurity,
+      link: "/Cyber.js",
     },
   ];
   return (
@@ -89,11 +97,12 @@ function Courses() {
                   onMouseEnter={() => setImageFirst(step.image)}
                   key={step.id}
                 >
-                  
+                  <a href={step.link}>
                   <p className="text-[#98A2B3] font-semibold">
                     {step.id}. {step.header}
                   </p>
                   <p className="text-[#F9FAFB] pt-2">{step.description}</p>
+                  </a>
                 </div>
               ))}
             </div>
@@ -133,10 +142,12 @@ function Courses() {
                   onMouseEnter={() => setImageSecond(step.image)}
                   key={step.id}
                 >
+                  <a href={step.link}>
                   <p className="text-[#98A2B3] font-semibold">
                     {step.id}. {step.header}
                   </p>
                   <p className="text-[#F9FAFB] pt-2">{step.description}</p>
+                  </a>
                 </div>
               ))}
             </div>
