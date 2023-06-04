@@ -10,18 +10,22 @@ const navlinks = [
         title: "Courses",
         link: "#Courses",
     },
-    {
-        title: "About Us",
-        link: "/AboutUs",
-    },
-    {
-        title: "Web Development",
-        link: "/Webdev",
-    },
+    // {
+    //     title: "About Us",
+    //     link: "/AboutUs",
+    // },
+    // {
+    //     title: "Web Development",
+    //     link: "/Webdev",
+    // },
     {
         title: "Contact Us",
         link: "maile:anshupandey133@gmail.com",
     },
+    {
+        title:"Mentor",
+        link: "/Join"
+    }
 ];
 
 const Navbar = () => {

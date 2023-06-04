@@ -1,41 +1,31 @@
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Signup from "./components/Signup";
 import Webdev from "./pages/Webdev/Webdev";
 import Landing from "./pages/landing";
+import Join from "./pages/join";
+import RoomPage from "./pages/room";
 import Login from "./components/Login";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Landing />,
-  },
-  {
-    path: "/signup",
-    element: <Signup />,
-  },
-  {
-    path: "/webdev",
-    element: <Webdev />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-]);
 
 function App() {
   return (
-    <div className="font-sans">
-      <Navbar />
-      <RouterProvider router={router} />
-      <Footer />
-    </div>
+    <Router>
+      <div className="font-sans">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/webdev" element={<Webdev />} />
+          <Route path="/join" element={<Join />} />
+          <Route path="/room/:roomId" element={<RoomPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
