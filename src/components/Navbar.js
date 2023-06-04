@@ -14,6 +14,14 @@ const navlinks = [
         title: "About Us",
         link: "/AboutUs",
     },
+    {
+        title: "Web Development",
+        link: "/Webdev",
+    },
+    {
+        title: "Contact Us",
+        link: "maile:anshupandey133@gmail.com",
+    },
 ];
 
 const Navbar = () => {

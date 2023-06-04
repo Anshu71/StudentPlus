@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Signup from "./components/Signup";
-import Webdev from "./pages/Webdev";
+import Webdev from "./pages/Webdev/Webdev";
 import Landing from "./pages/landing";
 import Login from "./components/Login";
 import {
