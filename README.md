@@ -18,8 +18,3 @@ npm start
 ```
 http://localhost:3000/
 ```
-
-## Disclaimer
-
-1. Don't install Dependencies of inside folder (server). because , they are not working
-2. Ignore folder such as public, server they are part of chatbot (but not working)
